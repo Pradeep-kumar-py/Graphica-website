@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support - Blinkit Style</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            background-image: url(wallpaper2.jpg);
+        }
+
+        .navbar {
+            background-color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section {
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-item h3 {
+            font-size: 18px;
+            color: #333;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f1f3f6;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-item h3:hover {
+            background-color: #ddd;
+        }
+
+        .faq-answer {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #555;
+            display: none;
+            border-left: 3px solid #2874f0;
+            margin-top: 5px;
+        }
+
+        .contact-section {
+            padding: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .contact-section div {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Help & Support</h1>
+    </div>
+
+    <!-- Help Container -->
+    <div class="container">
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Payment issue</h3>
+                <div class="faq-answer">
+                    Payment will be refunded in three working days, If you have further inquery contact No: 0000000000,or Email At Lickit@gmail.com
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3>What are the delivery hours?</h3>
+                <div class="faq-answer">
+                    Our delivery hours are between 7 AM to 11 PM every day, including weekends and public holidays.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I cancel my order?</h3>
+                <div class="faq-answer">
+                    You can cancel your order from the 'My Orders' section before it is out for delivery. Once the delivery process starts, cancellations will not be accepted.
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3>Delete or hide your Lickit account</h3>
+                <div class="faq-answer">
+                    Go the the my profile account where you find delete  option by clicking it you can delete it, for further assistance you can contact No: 9999999999, or Email: Lickit@gmail.com
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <div><strong>Email:</strong> Lickit@gmail.com</div>
+            <div><strong>Phone:</strong> +91-1234567890</div>
+            <div><strong>Address:</strong> Lickit HQ, 123 Street, Mumbi, India</div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle FAQ answers
+        document.querySelectorAll('.faq-item h3').forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>

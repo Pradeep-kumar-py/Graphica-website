@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f1f3f6;
+        }
+
+        .navbar {
+            background-color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .search-bar {
+            margin: 15px auto;
+            max-width: 900px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        .categories-container {
+            max-width: 900px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .category-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .category-card button{
+            background: none;
+            border: none;
+        }
+        .category-card button:hover{
+            cursor: pointer;
+        }
+
+        .category-card img {
+            width: 80%;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .category-card h3 {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .categories-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .categories-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Categories</h1>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for categories...">
+    </div>
+
+    <!-- Categories Grid -->
+    <div class="categories-container">
+        <div class="category-card">
+            <button onclick="location.href='physics_assignment.html'">
+            <img src="category/c1.jpg" alt="Fruits">
+            <h3>Physics Assignments</h3>
+            </button>
+        </div>
+        <div class="category-card">
+            <button onclick="location.href='chemistry_assignment.html'">
+            <img src="category/c4.jpg" alt="Dairy">
+            <h3>Chemistry Assignments</h3>
+            </button>
+        </div>
+        <div class="category-card">
+            <button onclick="location.href='math_assignment.html'">
+            <img src="category/c2.jpg" alt="Snacks">
+            <h3>Math Tutorial</h3>
+            </button>
+        </div>
+        <div class="category-card">
+            <img src="category/c7.jpg" alt="Staples">
+            <h3>Practical</h3>
+        </div>
+        <div class="category-card">
+            <img src="category/c5.jpg" alt="Bakery">
+            <h3>Engineering Mechanics</h3>
+        </div>
+        <div class="category-card">
+            <img src="category/c3.jpg" alt="Personal Care">
+            <h3>Project Sharing</h3>
+        </div>
+        <div class="category-card">
+            <img src="category/c8.webp" alt="Personal Care">
+            <h3>Free Lancing</h3>
+        </div>
+        <div class="category-card">
+            <img src="category/c9.jpg" alt="Personal Care">
+            <h3>Group Project</h3>
+        </div>
+        <div class="category-card">
+            <img src="category/c10.jpg" alt="Personal Care">
+            <h3>Skills Share</h3>
+        </div>
+        <div class="category-card">
+            <img src="category/c11.jpg" alt="Personal Care">
+            <h3>Lost & Found</h3>
+        </div>
+        <div class="category-card">
+            <img src="category/c12.jpg" alt="Personal Care">
+            <h3>Sharing Caring</h3>
+        </div>
+    </div>
+
+</body>
+</html>

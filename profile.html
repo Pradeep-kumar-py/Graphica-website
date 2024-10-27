@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+            background-image: url(wallpaper\ 3.jpg);
+            /* background-repeat: no-repeat; */
+            object-fit: cover;
+        }
+
+        .navbar {
+            background-color: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            color: #262626;
+        }
+
+        .profile-header {
+            display: flex;
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 30px;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-details {
+            flex-grow: 1;
+        }
+
+        .profile-details h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .profile-stats {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .profile-stats div {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .profile-bio {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .gallery {
+            max-width: 900px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .profile-header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-pic {
+                margin: 0 0 20px 0;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>My Profile</h1>
+    </div>
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <div class="profile-pic">
+            <img src="image/profile 1.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-details">
+            <h2>Abhay Singh</h2>
+            <div class="profile-stats">
+                <div><strong>120</strong> Posts</div>
+                <div><strong>300</strong> Followers</div>
+                <div><strong>250</strong> Following</div>
+            </div>
+            <div class="profile-bio">
+                <p>🌍 Explorer | 📸 Photographer | ✨ Dreamer</p>
+                <p>Loving the little things in life.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <img src="profile post/d1.jpg" alt="Post 1">
+        <img src="profile post/d2.jpg" alt="Post 2">
+        <img src="profile post/d3.jpg" alt="Post 3">
+        <img src="profile post/d4.jpg" alt="Post 4">
+        <img src="profile post/d5.jpg" alt="Post 5">
+        <img src="profile post/d6.jpg" alt="Post 6">
+    </div>
+
+</body>
+</html>
